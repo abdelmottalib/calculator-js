@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;600;700&display=swap');
+*{
+	box-sizing: border-box;
+}
+:root {
+	--height: 25%;
+}
+body {
+	margin: 0;
+	background-color: hsl(222, 26%, 31%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	font-family: League Spartan, sans-serif;
+}
+.main {
+	width: 31rem;
+	/* border: solid red; */
+	height: 31rem;
+	display: flex;
+	align-items: flex-end;
+	background-color: hsl(222, 26%, 31%);
+	border-radius: 10px;
+	flex-direction: column;
+}
+.lower {
+	height: 70%;
+	width: 100%;
+	/* border: solid blue; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 1rem;
+	gap: 1rem;
+	background-color: hsl(223, 31%, 20%);
+	border-radius: 15px;
+}
+.upper {
+
+	font-size: 3.5rem;
+	padding: 1rem 0.7rem 0.4rem 0rem;
+	width: 100%;
+	text-align: end;
+	margin-bottom: 5%;
+	color: white;
+	border-radius: 10px;
+	background-color: hsl(224, 36%, 15%);
+	overflow-wrap: break-word;
+}
+.block {
+	width: 6rem;
+	border-radius: 7px;
+	border-style: none;
+	font-weight: 600;
+	font-size: 2rem;
+	background-color: hsl(30, 25%, 89%);
+	color: hsl(221, 14%, 31%);
+	vertical-align: middle;
+	height: 3rem;
+	font-family: inherit;
+	padding-top: 0.5rem;
+	box-shadow: 0 3.5px hsl(28, 16%, 65%);
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.block_, .block__ {
+	width: 48%;
+}
+#del, #reset {
+	background-color: hsl(225, 58%, 67%);
+	color: white;
+	box-shadow: 0 3.5px hsl(224, 28%, 35%);
+}
+.block:hover {
+	background-color: rgb(255, 243, 243);
+}
+#del:hover, #reset:hover {
+	background-color: hsl(223, 55%, 81%);
+}
+#equal {
+	background-color: hsl(6, 63%, 50%);
+	color: white;
+	box-shadow: 0 3.5px hsl(6, 70%, 34%);
+}
+#equal:hover {
+	background-color: hsl(6, 59%, 60%);
+}
+.block:active {
+	box-shadow:none;
+	transform: translateY(3.5px);
+}
+p {
+	margin: auto 0;
+}
+.aboveOper {
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+.theme {
+	top: 20rem;
+	height: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.main-div {
+	display: flex;
+	flex-direction: column;
+}
+.container {
+	display: flex;
+	/* justify-content: flex-end; */
+}
+h3 {
+	font-size: 0.8rem;
+	margin-right: 1rem;
+}
+.toggle {
+	--width: 40px;
+	--height: calc(var(--width)/2);
+	--border-radius:calc(var(--height) / 2);
+	display: inline-block;
+
+}
+.theme-div {
+	height: 2rem;
+	border-radius: 0.2rem;
+	border: none;
+	color: white;
+	background-color: hsl(225, 58%, 67%);
+}
